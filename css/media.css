@@ -1,0 +1,109 @@
+@media (max-width: 350px) {
+  .Customers {
+    height: 800px;
+    background-image: linear-gradient(to right, #eee, #f6f6f6);
+    padding-top: 10px;
+  }
+  .Customers .carousel-indicators {
+    top: 375px;
+  }
+}
+
+/*smart phone and tablet*/
+@media (min-width: 500px) {
+  .Customers {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #eee;
+    position: relative;
+    height: 620px;
+  }
+
+  .Customers .carousel-indicators li {
+    text-indent: 0;
+
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: none;
+    margin: 10px;
+    overflow: hidden;
+    opacity: 0.4;
+  }
+
+  .Customers .carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: -60;
+    top: 120px;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+  }
+
+  .Customers .carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: -60;
+    top: 250px;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+  }
+}
+
+/*small screen*/
+@media (min-width: 768px) {
+}
+
+/*medium screen*/
+@media (min-width: 992px) {
+}
+
+/*large screen*/
+@media (min-width: 1200px) {
+  .ourwork .boxm {
+    margin-top: 60px;
+  }
+  .ourwork .bigbox {
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
+  .ourwork .bigbox2 .boxm {
+    margin-top: 0;
+  }
+  .ourwork .bigbox2 .boxlr {
+    margin-top: 60px;
+  }
+  .manager .mid {
+    margin-top: -30px;
+  }
+}
+
+/*x-large screen*/
+@media (min-width: 1400px) {
+  .ourwork .boxm {
+    margin-top: 60px;
+  }
+  .ourwork .bigbox {
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
+  .ourwork .bigbox2 .boxm {
+    margin-top: 0;
+  }
+  .ourwork .bigbox2 .boxlr {
+    margin-top: 60px;
+  }
+}
