@@ -34,10 +34,10 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+  max-height: calc(100vh - 61.5px);
 }
 .ss .carousel-inner img {
-  max-height: 690px;
-  height: 690px;
+  height: 100%;
 }
 .ss .carousel-caption {
   position: absolute;
@@ -252,7 +252,7 @@
 
 /*start Customers*/
 .Customers {
-  height: 500px;
+  min-height: 500px;
   background-image: linear-gradient(to right, #eee, #f6f6f6);
   padding-top: 10px;
 }
@@ -294,12 +294,10 @@
   font-weight: bold;
   margin-bottom: 0;
 }
+/* .carousel-indicators {
+  position: none;
+}
 .Customers .carousel-indicators {
-  position: absolute;
-  right: 0;
-  bottom: -60;
-  top: 100px;
-  left: 0;
   z-index: 2;
   display: flex;
   justify-content: center;
@@ -310,10 +308,18 @@
 }
 
 .Customers .carousel-indicators {
-  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+} */
+.carousel-indicator {
+  position: none;
   right: 0;
-  bottom: -60;
-  top: 150px;
+  bottom: 0;
   left: 0;
   z-index: 2;
   display: flex;
@@ -322,9 +328,9 @@
   margin-right: 15%;
   margin-bottom: 1rem;
   margin-left: 15%;
+  list-style: none;
 }
-
-.Customers .carousel-indicators li {
+.Customers .carousel-indicator li {
   text-indent: 0;
   width: 70px;
   height: 70px;
@@ -333,17 +339,10 @@
   margin: 10px;
   overflow: hidden;
   opacity: 0.8;
+  margin-top: 40px;
 }
 
-.Customers .carousel-indicators .active {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 5px;
-  opacity: 1;
-  border: 3px solid #844a0c;
-}
-
-.Customers .carousel-indicators li img {
+.Customers .carousel-indicator li img {
   max-width: 100%;
   max-height: 100%;
 }
@@ -551,6 +550,7 @@
   /* overflow: hidden; */
   padding-top: 20px;
   padding-bottom: 20px;
+  overflow: hidden;
 }
 
 .spikes {
@@ -600,7 +600,7 @@
   height: 500px;
 }
 .slider-a .image img {
-  width: 100%;
+  width: 90%;
   height: 100%;
   transition: 0.5s;
   animation: imgt 2s infinite alternate;
