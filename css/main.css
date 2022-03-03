@@ -41,13 +41,19 @@
 }
 .ss .carousel-caption {
   position: absolute;
-  right: 15%;
+  right: 0;
   bottom: 4.25rem;
-  left: 15%;
+  left: 0;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   color: #fff;
   text-align: center;
+  top: 400px;
+  width: 1000px;
+  margin: 0 auto;
+  height: 200px;
+  background-color: rgba(153, 153, 153, 0.8);
+  border-radius: 15px;
 }
 
 .ss .carousel-indicators {
@@ -74,9 +80,7 @@
 .ss .carousel-indicators .active {
   background-color: #844a0c;
 }
-.ss .carousel-caption {
-  background-color: rgba(153, 153, 153, 0.4);
-}
+
 .ss .carousel-caption h5 {
   color: #222;
   font-size: 30px;
